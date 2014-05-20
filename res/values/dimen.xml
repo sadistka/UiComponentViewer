@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <dimen name="padding">8dp</dimen>
+    <dimen name="vertical_padding">4dp</dimen>
+    
+    <dimen name="spacing_element_width">4dp</dimen>
+    <dimen name="spacing_element_height">32dp</dimen>
+    
+    <dimen name="icon_default_size">32dp</dimen>
+</resources>

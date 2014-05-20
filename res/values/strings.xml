@@ -1,0 +1,18 @@
+<resources>
+
+    <string name="app_name">UiCompomentViewer</string>
+    
+    <string name="display_info_screen_size">Screen size: %1$dx%2$d px</string>
+    <string name="display_info_density">Density: %1$d; %2$d dpi; %3$s</string>
+
+    <string name="spacing_element_width">Single element width: %1$d dp or %2$d px</string>
+    <string name="spacing_label">Spacing: %1$d dp or %2$d px</string>
+    
+    <string name="text_size_label">Text size: %1$d sp or %2$d px</string>
+    <string name="text_size_test_text">The quick brown fox jumps over the lazy dog.</string>
+
+    <string name="icon_size_label">Icon size: %1$dx%2$d dp or %3$dx%4$d px</string>
+    <string name="width">Width</string>
+    <string name="height">Height</string>
+    
+</resources>

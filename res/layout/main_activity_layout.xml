@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroll_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <!-- Device info -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/padding" >
+
+            <TextView
+                android:id="@+id/display_info_screen_size"
+                style="@style/main_area_name"
+                android:text="@string/display_info_screen_size" />
+
+            <TextView
+                android:id="@+id/display_info_density"
+                style="@style/main_area_name"
+                android:text="@string/display_info_density" />
+        </LinearLayout>
+
+        <!-- Spacing -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/padding" >
+
+                <TextView
+                    android:id="@+id/spacing_element_width_value"
+                    style="@style/main_area_name"
+                    android:text="@string/spacing_element_width" />
+
+                <TextView
+                    android:id="@+id/spacing_value"
+                    style="@style/main_area_name"
+                    android:text="@string/spacing_label" />
+
+                <SeekBar
+                    android:id="@+id/spacing_bar"
+                    style="@style/seek_bar"
+                    android:layout_width="match_parent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <View
+                    android:layout_width="@dimen/spacing_element_width"
+                    android:layout_height="@dimen/spacing_element_height"
+                    android:background="@android:color/holo_blue_dark" />
+
+                <TextView
+                    android:id="@+id/spacing_moving_element"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/spacing_element_height" />
+
+                <View
+                    android:layout_width="@dimen/spacing_element_width"
+                    android:layout_height="@dimen/spacing_element_height"
+                    android:background="@android:color/holo_purple" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Text size -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/padding" >
+
+            <TextView
+                android:id="@+id/text_size_value"
+                style="@style/main_area_name"
+                android:text="@string/text_size_label" />
+
+            <SeekBar
+                android:id="@+id/text_size_bar"
+                style="@style/seek_bar"
+                android:max="50" />
+
+            <TextView
+                android:id="@+id/text_size_test_text"
+                style="@style/single_view"
+                android:text="@string/text_size_test_text" />
+        </LinearLayout>
+
+        <!-- Icon size -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/padding" >
+
+                <TextView
+                    android:id="@+id/icon_size_value"
+                    style="@style/main_area_name"
+                    android:text="@string/icon_size_label" />
+
+                <TextView
+                    style="@style/single_view"
+                    android:text="@string/width" />
+
+                <SeekBar
+                    android:id="@+id/icon_size_width_bar"
+                    style="@style/seek_bar" />
+
+                <TextView
+                    style="@style/single_view"
+                    android:text="@string/height" />
+
+                <SeekBar
+                    android:id="@+id/icon_size_height_bar"
+                    style="@style/seek_bar" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/icon_placeholder"
+                style="@style/single_view"
+                android:layout_gravity="center"
+                android:background="@drawable/icon_drawable" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
